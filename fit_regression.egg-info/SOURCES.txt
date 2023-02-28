@@ -1,0 +1,7 @@
+README.md
+setup.py
+fit_regression.egg-info/PKG-INFO
+fit_regression.egg-info/SOURCES.txt
+fit_regression.egg-info/dependency_links.txt
+fit_regression.egg-info/requires.txt
+fit_regression.egg-info/top_level.txt

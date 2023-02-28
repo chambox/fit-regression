@@ -1,8 +1,8 @@
 import pandas as pd
-from sklearn.linear_model import LinearRegression, LogisticRegression
+import statsmodels.api as sm
 
 def fit_linear_regression(X, y):
-    """Fit a linear regression model to X and y.
+    """Fit an OLS model to X and y.
 
     Parameters
     ----------
@@ -13,9 +13,13 @@ def fit_linear_regression(X, y):
 
     Returns
     -------
-    sklearn.linear_model.LinearRegression
-        Fitted linear regression model.
+    statsmodels.regression.linear_model.RegressionResultsWrapper
+        Fitted OLS model.
     """
-    model = LinearRegression()
-    model.fit(X, y)
-    return model
+    X = sm.add_constant(X)
+    model = sm.OLS(y, X)
+    results = model.fit()
+    return results
+
+
+    
