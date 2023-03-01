@@ -1,5 +1,7 @@
 README.md
 setup.py
+fit_regression/__init__.py
+fit_regression/fit_regression.py
 fit_regression.egg-info/PKG-INFO
 fit_regression.egg-info/SOURCES.txt
 fit_regression.egg-info/dependency_links.txt
