@@ -21,7 +21,5 @@ def fit_linear_regression(X, y):
     results = model.fit()
     return results
 
- 
-
   
 

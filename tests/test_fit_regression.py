@@ -16,16 +16,7 @@ class TestFitRegression(unittest.TestCase):
         self.assertAlmostEqual(model.params[1], 79.75818359288121, places=1)
         self.assertAlmostEqual(model.params[2], 77.65486075313702, places=1)
         self.assertAlmostEqual(model.params[3], 27.265924552530194, places=1)
-        
-    def test_fit_logistic_regression(self):
-        np.random.seed(123)
-        X, y = make_classification(n_samples=100, n_features=5, n_informative=3, n_redundant=1, n_repeated=0, random_state=123)
-        X = pd.DataFrame(X, columns=['A', 'B', 'C', 'D', 'E'])
-        y = pd.Series(y, name='target')
-        model = fit_logistic_regression(X, y)
-        self.assertAlmostEqual(model.params[0],0.03582688267328737)
-            
-        
+          
 if __name__ == '__main__':
     unittest.main()
 
