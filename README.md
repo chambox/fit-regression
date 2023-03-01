@@ -9,3 +9,16 @@ Fit a regression model
 This command runs all the tests in the tests directory using the unittest test runner.
 
 # Building wheel 
+To build a wheel package for your Python library, you can use the `bdist_wheel` command of `setuptools` package.
+
+Here's an example of how to do this:
+
+First, ensure that setuptools is installed in your Python environment. You can do this by running `pip install setuptools`.
+
+Navigate to the root directory of your library where `setup.py` is located.
+
+Run the following command to build the wheel package: python `setup.py bdist_wheel`
+
+This command will build a wheel package in the dist directory.
+You can now distribute the wheel package to others or install it on your own system using pip install <path_to_wheel>.
+
