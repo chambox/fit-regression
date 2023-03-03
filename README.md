@@ -1,4 +1,9 @@
-# Fit-regression
+# Summary 
+
+1. Fork this repository 
+2. Adapt
+
+# Generic example
 Fit a regression model
 
 # Testing 
