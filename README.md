@@ -17,10 +17,10 @@ To create a local copy of your forked repository:
 
 3. Change into the repository directory using the command `cd fit-regression`.
 4.Create a virtual environment, one way to do this is by first installing  `virtualenv` software.
-  For Python 3:
+  * For Python 3:
 
-  On macOS/Linux: python3 -m pip install --user virtualenv
-  On Windows: py -m pip install --user virtualenv
+    * On macOS/Linux: python3 -m pip install --user virtualenv
+    * On Windows: py -m pip install --user virtualenv
 
 5. Create a virtual environment for the repository using the command `virtualenv venv`.
 
