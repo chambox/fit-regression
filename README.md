@@ -11,7 +11,7 @@ To fork this repository:
 ## Creating a Local Copy
 To create a local copy of your forked repository:
 
-1. Clone the repository to your local machine using the command git clone https://github.com/YOUR-USERNAME/python-library-template.git. Replace YOUR-USERNAME with your GitHub username.
+1. Clone the repository to your local machine using the command git clone https://github.com/YOUR-USERNAME/fit-regression.git. Replace YOUR-USERNAME with your GitHub username.
 
 2. Rename the directory name to suit your needs, in the example we use `fit-regression`.
 
