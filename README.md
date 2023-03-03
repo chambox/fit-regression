@@ -1,29 +1,50 @@
-# Summary 
+# Python Library Template
 
-1. Fork this repository 
-2. Adapt
+This repository provides a generic Python library template that users can fork and adapt to suit their needs.
 
-# Generic example
-Fit a regression model
+## Forking the Repository
 
-# Testing 
-1. Install the library (using  `pip install -e .`) and dependencies in the `requirements.txt` in your virtual env. 
-2. The `pip install -e .` installs the `fit-regression` library in editable mode (-e) and installs the dependencies listed in `setup.py`.
-3. Run the tests: `python -m unittest discover tests`
+To fork this repository:
 
-This command runs all the tests in the tests directory using the unittest test runner.
+1. Click the "Fork" button on the upper-right corner of this repository's main page. This will create a copy of this repository in your own GitHub account.
 
-# Building wheel 
-To build a wheel package for your Python library, you can use the `bdist_wheel` command of `setuptools` package.
+## Creating a Local Copy
+To create a local copy of your forked repository:
 
-Here's an example of how to do this:
+1. Clone the repository to your local machine using the command git clone https://github.com/YOUR-USERNAME/python-library-template.git. Replace YOUR-USERNAME with your GitHub username.
 
-First, ensure that setuptools is installed in your Python environment. You can do this by running `pip install setuptools`.
+2. Rename the directory name to suit your needs, in the example we use `fit-regression`.
 
-Navigate to the root directory of your library where `setup.py` is located.
+3. Change into the repository directory using the command `cd fit-regression`.
+4.Create a virtual environment, one way to do this is by first installing  `virtualenv` software.
+  For Python 3:
 
-Run the following command to build the wheel package: `python setup.py bdist_wheel`
+  On macOS/Linux: python3 -m pip install --user virtualenv
+  On Windows: py -m pip install --user virtualenv
 
-This command will build a wheel package in the dist directory.
-You can now distribute the wheel package to others or install it on your own system using pip install <path_to_wheel>.
+5. Create a virtual environment for the repository using the command `virtualenv venv`.
 
+6. Activate the virtual environment using the command source `venv/bin/activate` (on macOS/Linux) or `venv\Scripts\activate` (on Windows).
+
+7. Modify the `requirements.txt` file to add all your dependencies
+
+8. Install the required dependencies using the command `pip install -r requirements.txt`.
+
+## Writing Tests
+
+To write tests for each method or module you write:
+
+Create a new Python file in the tests directory with the name test_<module-name>.py. Replace <module-name> with the name of the module you want to test.
+
+Import the module you want to test using the command from <module-name> import <function-name>.
+
+Write test functions that call the functions you want to test and check their output using assertions. For example:
+
+```
+def test_addition():
+    assert add(2, 3) == 5
+Run the tests using the command pytest in the root directory of the repository.
+```
+## Contributing
+
+If you find any issues with this repository, or if you have any suggestions for improvements, please feel free to create a pull request or open an issue. We welcome contributions from the community.
