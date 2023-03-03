@@ -34,7 +34,7 @@ To create a local copy of your forked repository:
 
 To write tests for each method or module you write:
 
-Create a new Python file in the tests directory with the name test_<module-name>.py. Replace <module-name> with the name of the module you want to test.
+Create a new Python file in the tests directory with the name `test_<module-name>.py` also see examples of tests in the `tests` directory. Replace `<module-name>` with the name of the module you want to test.
 
 Import the module you want to test using the command from <module-name> import <function-name>.
 
